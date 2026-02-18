@@ -46,6 +46,12 @@ static MenuEntry menu_entries[] =
     { MenuSort, "Name", SortByName },
     { MenuSort, "Size", SortBySize },
 
+    { MenuText, "Tools", 0 }.
+    { MenuTool, "Pkg Installer (srt by ttle)", SortByTitle }, 
+    { MenuTool, "Backup Manager (srt by region)", SortByRegion }, 
+    { MenuTool, "File Manager (srt by name)", SortByName }, 
+    { MenuTool, "Homebrew Store (srt by size)", SortBySize }, 
+
     { MenuText, "Content:", 0 },
     { MenuContent, "All", 0 },
 
