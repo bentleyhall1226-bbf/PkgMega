@@ -264,15 +264,15 @@ static void pkgi_do_main(pkgi_input* input)
         if (input->active & pkgi_cancel_button())
         {
             input->pressed &= ~pkgi_cancel_button();
-            pkgi_dialog_ok_cancel("\xE2\x98\x85  PKGi PS3 v" PKGI_VERSION "  \xE2\x98\x85", _("Exit to XMB?"), &cb_dialog_exit);
+            pkgi_dialog_ok_cancel("\xE2\x98\x85  PKGMega PS3 v" PKGI_VERSION "  \xE2\x98\x85", _("Exit to XMB?"), &cb_dialog_exit);
         }
 
         if (input->active & PKGI_BUTTON_SELECT)
         {
             input->pressed &= ~PKGI_BUTTON_SELECT;
-            pkgi_dialog_message("\xE2\x98\x85  PKGi PS3 v" PKGI_VERSION "  \xE2\x98\x85",
-                                "             PlayStation 3 version by Bucanero\n\n"
-                                "           https://github.com/bucanero/pkgi-ps3/");
+            pkgi_dialog_message("\xE2\x98\x85  PKGMega PS3 v" PKGI_VERSION "  \xE2\x98\x85",
+                                "             PlayStation 3 version by bentleyhall1226-bbf, Forked from PKGi.\n\n"
+                                "           Credits go to https://github.com/bucanero/pkgi-ps3/");
         }
 
         if (input->active & PKGI_BUTTON_L2)
